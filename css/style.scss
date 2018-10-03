@@ -1,0 +1,200 @@
+
+//IMPORTS
+@import "./imports/mixins.scss";
+@import"./imports/variables.scss";
+
+// FONTS
+
+@font-face{
+	font-family: 'RobotoLit';
+	src:url('Roboto-Light.ttf');
+}
+@font-face{
+	font-family: 'RobotoItal';
+	src:url('Roboto-Italic.ttf');
+}
+@font-face{
+	font-family: 'RobotoMed';
+	src:url('Roboto-Medium.ttf');
+}
+@font-face{
+	font-family: 'UnnaIt';
+	src:url('Unna-Italic.ttf');
+}
+@font-face{
+	font-family: 'NuniLit';
+	src:url('Nunito-Light.ttf');
+}
+@font-face{
+	font-family: 'NuniReg';
+	src:url('Nunito-Regular.ttf');
+}
+@font-face{
+	font-family: 'NuniTal';
+	src:url('Nunito-Italic.ttf');
+}
+@font-face{
+	font-family:'RaLit';
+	src:url('Raleway-Light.ttf');
+}
+
+								// FONT RULES
+//Color
+.head_lead, .head_title{
+	color:$whitemiso;
+}
+
+//Typo
+.lead{
+	font-family: 'RaLit';
+}
+
+						// GENERAL SETTINGS
+
+
+
+
+
+															// HEADER
+
+#part1{
+	background: url('../visuels/sublime_skills.jpg') center 0 no-repeat fixed;
+	background-size: $bannerW;
+
+
+}
+
+#part2{
+
+
+}
+
+
+	// .header_img{
+	// 			position:absolute;
+	// 			top: 0px;
+	// 			left: 0px;
+	// 			z-index: -1;
+	// 	    width: $bannerW;
+	// 	    height: $bannerH;
+	// 	    object-fit:$bannerFit;
+	// 			filter: brightness(50%);
+	//
+	//
+	// }
+
+
+.navbar{ // On déclare tout le style dans une seule balise
+ background: transparent;
+ width: $bannerW;
+
+	a{        // Ici la couleur des liens
+    color: $whitemiso;
+		font-family: 'RaLit';
+
+    &:hover{color:$whitemiso;
+		// Là, le comportement quand on survole
+
+			text-decoration: underline;
+
+    }
+  }
+
+}
+
+.header_title{
+	margin-top: 5%;
+	color: $whitemiso;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 400px;
+}
+
+.arrow_down{
+	color:$whitemiso;
+}
+
+
+                          // SKILL SECTIONS
+
+//SKILL LOGOS
+
+.skill_logo{
+	width:60px;
+	height: 60px;
+	padding:2%;
+
+}
+
+
+//SKILLS loader
+
+.loader{
+		border: 16px solid #f3f3f3; /* Light grey */
+		border-top: 16px solid #3498db; /* Blue */
+		border-radius: 50%;
+		width: 120px;
+		height: 120px;
+		animation: spin 2s linear infinite;
+		}
+
+//Loader Shape
+.progress_bar1, .progress_bar2, .progress_bar3,
+ .progress_bar4, .progress_bar5, .progress_bar6,
+  .progress_bar7, .progress_bar8, .progress_bar9{
+
+		width: $progressW;
+		height: $progressH;
+		border: $progressBorder;
+		border-radius: $progressRad;
+	}
+//Loading Bar Style
+.load_bar_jq, .load_bar_css, .load_bar_php,
+.load_bar_sql, .load_bar_sass, .load_bar_html,
+.load_bar_strap, .load_bar_toshop, .load_bar_sk{
+	height: $load_H;
+	border-radius: $load_Rad;
+	width: $OriginalW;
+	margin-top: 0.5px;
+
+}
+
+.load_bar_jq{
+	background-color: $jquery;
+}
+.load_bar_html{
+	background-color: $html;
+}
+.load_bar_css{
+	background-color: $css;
+}
+.load_bar_php{
+	background-color: $php;
+}
+.load_bar_sass{
+	background-color: $sass;
+}
+.load_bar_strap{
+	background-color: $bootstrap;
+}
+.load_bar_toshop{
+	background-color: $toshop;
+}
+.load_bar_sk{
+	background-color: $sketch;
+}
+.load_bar_sql{
+	background-color: $sql;
+}
+
+
+
+
+														// POPRTFOLIO SECTIONS
+
+#parallax3{
+	background: url('../visuels/office.jpg') center 0 no-repeat fixed;
+	background-size: $bannerW;
+	
+}

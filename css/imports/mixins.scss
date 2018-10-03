@@ -1,0 +1,6 @@
+@mixin border-radius($progressRad){ // Le mixin sert à déclarer une fonction
+  -webkit-border-radius: $progressRad; // qui pourra être appellée plusieurs fois
+  -moz-border-radius: $progressRad; //Ici on créé la variable pour que le radius soit
+  -o-border-radius: $progressRad; // le même sur chaque navigateur
+  border-radius: $progressRad;
+}

@@ -1,0 +1,17 @@
+<div class="compétences" id="skills">
+	<div class="container-fluid">
+
+		<div class="wrapper_txt"><h1 class="text-center">COMPÉTENCES</h1></div>
+	</div>
+	<?php include'simon_skills.php' ?>
+</div>
+
+
+<!--  Portfolio -->
+<div class="portfolio" id="Portfolio">
+	<?php include'portfolio.php'?>
+<!-- Contact  -->
+	<div class="contact"id="contact">
+		<?php include'contact.php' ?>
+	</div>
+</div>
